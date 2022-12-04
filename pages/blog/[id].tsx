@@ -15,10 +15,7 @@ const BlogPost: NextPage = ({
         <div className="flex justify-center mb-4">
           <BlogHeader createdAt={createdAt} author={author} />
         </div>
-        <div
-          className={`${detail.html} flex flex-col`}>
-          {parse(bodyHTML)}
-        </div>
+        <div className={`${detail.html} flex flex-col`}>{parse(bodyHTML)}</div>
       </div>
     </section>
   )
